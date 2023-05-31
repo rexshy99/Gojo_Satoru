@@ -1,6 +1,6 @@
 {
-    "name": "Gojo_Satoru",
-    "description": "Gojo is a Telegram Group management bot made using Pyrogram and Python, which makes it modern and faster than most of the Telegram chat managers.",
+    "name": "Nagi_Seishiro",
+    "description": "Nagi is a Telegram Group management bot made using Pyrogram and Python, which makes it modern and faster than most of the Telegram chat managers.",
     "logo" : "https://te.legra.ph/file/633bd27c1607fe98920b6.jpg" ,
     "keywords": [
       "telegram bot",
@@ -16,42 +16,42 @@
       "BOT_TOKEN": {
         "description": "Your telegram bot token, get from @Botfather in telegram.",
         "required": true,
-        "value": ""
+        "value": "6182099648:AAGvnk0ZaAlJe1Dgbw_bvfIeJDTGqMq23bw"
       },
       "API_ID": {
         "description": "Get API_ID from my.telegram.org, used for pyrogram base.",
         "required": true,
-        "value": ""
+        "value": "27621151"
       },
       "API_HASH": {
         "description": "Get API_HASH from my.telegram.org, used for pyrogram base.",
         "required": true,
-        "value": ""
+        "value": "90be41dd2c9a9942125411c52ba10a62"
       },
       "DB_URI": {
         "description": "Your MongoDB connection string.",
         "required": true,
-        "value": ""
+        "value": "mongodb+srv://Xenovtgbots3:Xenov07112005@cluster0.zqwcl9d.mongodb.net/?retryWrites=true&w=majority"
       },
       "DB_NAME": {
         "description": "Your MongoDB database name.",
         "required": true,
-        "value": ""
+        "value": "Xenovtgbots3"
       },
       "OWNER_ID": {
         "description": "Your user ID as an integer.",
         "required": true,
-        "value": "1344569458"
+        "value": "5139110246"
       },
       "SUPPORT_GROUP": {
         "description": "Your Telegram support group chat username where user's can contact in case of a problem..",
         "required": true,
-        "value": "gojo_bots_network"
+        "value": "SN_BotSupport"
       },
       "MESSAGE_DUMP": {
         "description": "Event logs channel where bot will send updates.",
         "required": true,
-        "value": "-1001713325956"
+        "value": "-1001806321722"
       },
       "VERSION": {
         "description": "A Version to be shown in bot.",
@@ -61,7 +61,7 @@
       "PREFIX_HANDLER": {
         "description": "Something like '/' to execute commands...Don't give comma or anything after 1 handler just give and space then enter second hand;ler",
         "required": true,
-        "value": "/ ! $"
+        "value": "/start"
       },
       "DEV_USERS": {
         "description": "ID of users who are Devs of your bot. Use space to seprate values",
@@ -70,7 +70,7 @@
       },
       "SUPPORT_CHANNEL": {
         "description": "Channel where bot uodates will be posted!",
-        "value": "gojo_bots_network"
+        "value": "-1001806321722"
       },
       "SUDO_USERS": {
         "description": "A space separated list of user IDs who you want to assign as sudo users.",
