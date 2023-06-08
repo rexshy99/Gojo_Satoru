@@ -10,7 +10,7 @@ SCHEME_LEN = len(SCHEME)
 SRV_SCHEME = "mongodb+srv://"
 SRV_SCHEME_LEN = len(SRV_SCHEME)
 DEFAULT_PORT = 27017
-myclient = pymongo.MongoClient("mongodb+srv://Xenovtgbots3:Xenov07112005@cluster0.zqwcl9d.mongodb.net/?retryWrites=true&w=majority")
+myclient = MongoClient("mongodb+srv://Xenovtgbots3:Xenov07112005@cluster0.zqwcl9d.mongodb.net/?retryWrites=true&w=majority")
 
 try:
     Powers_db_client = MongoClient(DB_URI)
