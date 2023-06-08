@@ -1,6 +1,7 @@
 from sys import exit as exiter
 
 from pymongo import MongoClient
+client = MongoClient()
 from pymongo.errors import PyMongoError
 
 from Powers import DB_NAME, DB_URI, LOGGER
