@@ -1,10 +1,16 @@
 from sys import exit as exiter
 
 from pymongo import MongoClient
-client = MongoClient()
 from pymongo.errors import PyMongoError
 
 from Powers import DB_NAME, DB_URI, LOGGER
+
+SCHEME = "mongodb://"
+SCHEME_LEN = len(SCHEME)
+SRV_SCHEME = "mongodb+srv://"
+SRV_SCHEME_LEN = len(SRV_SCHEME)
+DEFAULT_PORT = 27017
+myclient = pymongo.MongoClient("mongodb+srv://Xenovtgbots3:Xenov07112005@cluster0.zqwcl9d.mongodb.net/?retryWrites=true&w=majority")
 
 try:
     Powers_db_client = MongoClient(DB_URI)
