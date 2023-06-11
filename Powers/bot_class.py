@@ -5,10 +5,11 @@ from threading import RLock
 from time import gmtime, strftime, time
 
 import pyromod.listen
-import pyroaddon
 from pyrogram import Client, __version__
 from pyrogram.raw.all import layer
 from pyrogram.types import BotCommand
+from pyrogram.enums import ParseMode
+import sys
 
 from Powers import (API_HASH, API_ID, BOT_TOKEN, LOG_DATETIME, LOGFILE, LOGGER,
                     MESSAGE_DUMP, NO_LOAD, OWNER_ID, UPTIME, WORKERS,
