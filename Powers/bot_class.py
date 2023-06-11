@@ -1,7 +1,10 @@
+from aiohttp import web
+from plugins import web_server
 from platform import python_version
 from threading import RLock
 from time import gmtime, strftime, time
 
+import pyromod.listen
 import pyroaddon
 from pyrogram import Client, __version__
 from pyrogram.raw.all import layer
@@ -102,6 +105,12 @@ class Gojo(Client):
                 document=LOGFILE,
                 caption=f"Uptime: {runtime}",
             )
+        #web-response
+        app = web.AppRunner(await web_server())
+        await app.setup()
+        bind_address = "0.0.0.0"
+        await web.TCPSite(app, bind_address, PORT).start()
+
         await super().stop()
         MongoDB.close()
         LOGGER.info(
