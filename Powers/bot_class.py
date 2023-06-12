@@ -114,10 +114,5 @@ class Gojo(Client):
 
     async def stop(self, *args):
         await super().stop()
-        MongoDB.close()
-        LOGGER.info(
-            f"""Bot Stopped.
-            Logs have been uploaded to the MESSAGE_DUMP Group!
-            runtime: {runtime}s\n
-        """,
+        self.LOGGER(__name__).info("Bot stopped.")
         )
