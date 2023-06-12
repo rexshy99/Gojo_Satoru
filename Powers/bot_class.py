@@ -114,4 +114,4 @@ class Gojo(Client):
 
     async def stop(self, *args):
         await super().stop()
-        self.LOGGER(name).info("Bot stopped.")
+        LOGGER(__name__).info("Bot stopped.")
