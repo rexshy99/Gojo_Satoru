@@ -316,7 +316,7 @@ async def stop_and_send_logger(c:Gojo,is_update=False):
     LOGGER.info(
             f"""Bot Stopped.
             Logs have been uploaded to the MESSAGE_DUMP Group!
-            Runtime: {runtime}s\n
+            runtime: {runtime}s\n
         """,
         )
     return
